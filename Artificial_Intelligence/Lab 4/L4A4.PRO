@@ -1,0 +1,9 @@
+predicates
+	sum(integer,integer).
+clauses
+	sum(0,0).
+	sum(N,Sum):-
+		N>0,
+		N1=N-1,
+		sum(N1,R1),
+		Sum=R1+N.
